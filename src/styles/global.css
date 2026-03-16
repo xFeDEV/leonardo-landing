@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-campana-morado: #53237E;
+  --color-campana-lima: #C9D82D;
+  --color-campana-verde: #108E51;
+}
