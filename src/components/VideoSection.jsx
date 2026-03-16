@@ -99,8 +99,8 @@ export default function VideoSection() {
             playsInline
             preload="metadata"
           >
-            <source src="/ganamos-consulta.mov" type="video/quicktime" />
-            <source src="/ganamos-consulta.mov" type="video/mp4" />
+            <source src="/video2.mp4" type="video/quicktime" />
+            <source src="/video2.mp4" type="video/mp4" />
             Tu navegador no soporta la reproducción de video.
           </video>
         </div>

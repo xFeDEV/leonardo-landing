@@ -48,7 +48,7 @@ export default function ProposalsCarousel() {
 
   return (
     <section
-      className="w-full bg-campana-lima py-12 md:py-16"
+      className="w-full py-12 md:py-16"
       aria-label="Propuestas de campaña"
       id="propuestas"
     >
@@ -127,11 +127,10 @@ export default function ProposalsCarousel() {
             <button
               key={i}
               onClick={() => setCurrentIndex(i)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${
-                i === currentIndex
+              className={`w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${i === currentIndex
                   ? 'bg-campana-morado scale-125'
                   : 'bg-campana-morado/30 hover:bg-campana-morado/60'
-              }`}
+                }`}
               aria-label={`Ir a grupo ${i + 1}`}
             />
           ))}
