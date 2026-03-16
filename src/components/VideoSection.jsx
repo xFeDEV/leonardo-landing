@@ -76,7 +76,7 @@ export default function VideoSection() {
       </div>
 
       {/* Video Container */}
-      <div className="relative z-10 flex items-center justify-center py-12 px-4 md:py-20 md:px-8">
+      <div className="relative z-10 flex items-center justify-center py-6 px-2 md:py-20 md:px-8">
         <div className="w-full max-w-3xl rounded-lg overflow-hidden shadow-2xl">
           <video
             className="w-full h-auto block"

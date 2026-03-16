@@ -5,3 +5,23 @@
   --color-campana-lima: #C9D82D;
   --color-campana-verde: #108E51;
 }
+
+/* Fix white line gaps between sections */
+img {
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main > * {
+  margin: 0;
+  padding-block: 0;
+}
