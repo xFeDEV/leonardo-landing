@@ -40,9 +40,9 @@ export default function ProposalsCarousel() {
     setCurrentIndex((i) => (i >= maxIndex ? 0 : i + 1));
   }, [maxIndex]);
 
-  // Auto-advance every 5 seconds
+  // Auto-advance every 2.5 seconds
   useEffect(() => {
-    const timer = setInterval(next, 5000);
+    const timer = setInterval(next, 2500);
     return () => clearInterval(timer);
   }, [next]);
 
