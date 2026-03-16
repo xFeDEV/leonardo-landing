@@ -1,13 +1,20 @@
 export default function LeonardoBio() {
   return (
     <section
-      className="relative w-full bg-campana-morado overflow-hidden"
+      className="relative w-full overflow-hidden"
       aria-label="¿Quién es Leonardo Huerta?"
       id="mi-vida"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-end relative min-h-[550px]">
+      {/* Background image with purple texture */}
+      <div
+        className="absolute inset-0 bg-campana-morado bg-cover bg-center"
+        style={{ backgroundImage: "url('/imgi_64_fondo-imparables-morado.webp')" }}
+        aria-hidden="true"
+      />
+
+      <div className="relative max-w-7xl mx-auto flex flex-col md:flex-row items-center z-10">
         {/* Left Column — Text Content */}
-        <div className="w-full md:w-3/5 flex flex-col justify-center px-8 py-12 md:px-12 lg:px-16 z-10">
+        <div className="w-full md:w-3/5 flex flex-col justify-center px-8 py-12 md:px-12 lg:px-16">
           {/* Title */}
           <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-black text-white leading-tight italic mb-8">
             ¿Quién es Leonardo
@@ -46,12 +53,12 @@ export default function LeonardoBio() {
           </p>
         </div>
 
-        {/* Right Column — Leonardo Image (transparent bg, sits on purple) */}
-        <div className="w-full md:w-2/5 flex items-end justify-center md:justify-end self-end">
+        {/* Right Column — Poster Image, centered both ways */}
+        <div className="w-full md:w-2/5 flex items-center justify-center py-8 md:py-12 px-4">
           <img
-            src="/leonardo.png"
-            alt="Leonardo Huerta — Candidato a la Vicepresidencia"
-            className="w-full max-w-md md:max-w-none h-auto object-contain drop-shadow-2xl"
+            src="/poster-hero.PNG"
+            alt="Leonardo El Vice — Póster de campaña: Una Nueva Historia"
+            className="w-full max-w-sm md:max-w-md h-auto object-contain rounded-lg shadow-2xl"
             loading="lazy"
           />
         </div>
