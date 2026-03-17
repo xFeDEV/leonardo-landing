@@ -25,7 +25,7 @@ export default function LeonardoBio() {
           {/* Bio bullets */}
           <ul className="space-y-4 text-white text-base sm:text-lg leading-relaxed list-disc list-outside pl-5 marker:text-campana-lima">
             <li>
-              <strong>Profesor universitario de Derecho y Filosofía</strong>, nacido en <strong>Pereira, Risaralda</strong>, en una familia trabajadora de clase media. Tiene 46 años, está casado y es padre de dos hijos.
+              <strong>Profesor universitario de Derecho y Filosofía</strong>, nacido en <strong>Pereira, Risaralda</strong>, en una familia trabajadora de clase media.
             </li>
             <li>
               Académico con una sólida formación: graduado en <strong>dos carreras</strong>, con <strong>cinco especializaciones</strong>, <strong>dos maestrías con honores</strong> y actualmente cursa un <strong>doctorado</strong>.
