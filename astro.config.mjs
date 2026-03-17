@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://leonardo-huerta.feexel.tech',
+  site: 'https://leonardohuerta.co',
   integrations: [react(), sitemap()],
 
   vite: {
