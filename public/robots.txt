@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leonardo-huerta.feexel.tech/sitemap-index.xml
