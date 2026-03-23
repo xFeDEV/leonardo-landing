@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.jsx";
 import VideoSection from "../components/VideoSection.jsx";
+import FormulaSection from "../components/FormulaSection.jsx";
+import DescargaPrograma from "../components/DescargaPrograma.jsx";
 import LeonardoBio from "../components/LeonardoBio.jsx";
 import ProposalsCarousel from "../components/ProposalsCarousel.jsx";
 ---
@@ -9,6 +11,8 @@ import ProposalsCarousel from "../components/ProposalsCarousel.jsx";
 <Layout>
   <Hero client:load />
   <VideoSection client:load />
+  <FormulaSection client:load />
+  <DescargaPrograma client:load />
   <ProposalsCarousel client:load />
   <LeonardoBio client:load />
 </Layout>

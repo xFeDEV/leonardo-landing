@@ -1,15 +1,10 @@
 export default function VideoSection() {
   return (
     <section
-      className="relative w-full bg-campana-verde overflow-hidden"
+      className="relative w-full bg-white overflow-hidden"
       aria-label="Video de campaña"
     >
-      {/* Background crowd image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-40"
-        style={{ backgroundImage: "url('/imgi_62_fondo-verde.webp')" }}
-        aria-hidden="true"
-      />
+
 
       {/* Floating Social Media Icons (Left Side) */}
       <div className="fixed left-0 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-2 p-1">
@@ -76,10 +71,10 @@ export default function VideoSection() {
       </div>
 
       {/* Video Container */}
-      <div className="relative z-10 flex items-center justify-center py-6 px-2 md:py-20 md:px-8">
-        <div className="w-full max-w-3xl rounded-lg overflow-hidden shadow-2xl">
+      <div className="relative z-10 w-full">
+        <div className="w-full overflow-hidden">
           <video
-            className="w-full h-auto block"
+            className="w-full h-auto block aspect-video"
             controls
             autoPlay
             muted
@@ -87,8 +82,8 @@ export default function VideoSection() {
             playsInline
             preload="metadata"
           >
-            <source src="/video2.mp4" type="video/quicktime" />
-            <source src="/video2.mp4" type="video/mp4" />
+            <source src="/videoclaudialeonardo.mov" type="video/quicktime" />
+            <source src="/videoclaudialeonardo.mov" type="video/mp4" />
             Tu navegador no soporta la reproducción de video.
           </video>
         </div>

@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProgramaHero from "../components/ProgramaHero.jsx";
+import PdfViewer from "../components/PdfViewer.jsx";
+---
+
+<Layout
+  title="Programa de Gobierno | Claudia Presidenta & Leonardo El Vice"
+  description="Aquí está nuestro Programa de Gobierno 2026-2030. Conoce nuestras propuestas y descárgalo para empezar a escribir Una Nueva Historia por Colombia."
+  image="/heroprograma.jpg"
+>
+  <ProgramaHero client:load />
+  <PdfViewer client:load />
+</Layout>

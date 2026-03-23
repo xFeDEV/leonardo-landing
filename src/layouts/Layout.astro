@@ -1,19 +1,22 @@
 ---
 import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImage = new URL('/poster-hero.PNG', Astro.site);
-
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
 }
 
 const {
   title = 'Leonardo Huerta | Fórmula Vicepresidencial de Claudia López',
   description = 'El programa de gobierno que el país necesita. Descubre las propuestas de Leonardo Huerta, la fórmula vicepresidencial de Claudia López.',
+  image = '/poster-hero.PNG',
 } = Astro.props;
+
+const ogImage = new URL(image, Astro.site || Astro.url.origin);
 ---
 
 <!doctype html>
@@ -65,5 +68,6 @@ const {
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
